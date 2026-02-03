@@ -1,35 +1,35 @@
-# Account Management Form (Vue 3)
+# Форма управления учетными записями (Vue 3)
 
-Test task implementation for an account management form with validation and persistence.
+Тестовое задание: форма управления учетными записями с валидацией и сохранением.
 
-## Stack
+## Стек
 
 - Vue 3 (Composition API)
 - TypeScript
 - Pinia
 - Element Plus
 
-## Requirements Covered
+## Реализовано
 
-- Header with add button, label hint, and list of accounts with field labels.
-- Fields:
-  - Label (optional, max 50 chars, semicolon-separated)
-  - Type (LDAP or Local)
-  - Login (required, max 100 chars)
-  - Password (required for Local, max 100 chars)
-- LDAP hides password and stores it as null.
-- Validation on blur for text inputs and on change for the select.
-- Invalid fields are highlighted with a red border.
-- Label is stored as an array of objects: `{ text: "label" }` per segment.
-- Accounts are stored in Pinia and persisted in localStorage (key: `accounts-form`).
+- Заголовок, кнопка добавления, подсказка по меткам, список учетных записей с лейблами полей.
+- Поля учетной записи:
+  - Метка (необязательное, максимум 50 символов, ввод через `;`)
+  - Тип записи (LDAP / Локальная)
+  - Логин (обязательное, максимум 100 символов)
+  - Пароль (обязательное для "Локальная", максимум 100 символов)
+- При выборе LDAP поле "Пароль" скрывается и сохраняется как `null`.
+- Валидация выполняется: для текстовых полей — по потере фокуса, для селекта — по изменению.
+- Невалидные поля подсвечиваются красной обводкой.
+- Метка сохраняется как массив объектов вида `{ text: "..." }` (каждый сегмент до `;`).
+- Данные сохраняются в Pinia и персистятся в localStorage (ключ: `accounts-form`).
 
-## Project Structure
+## Структура проекта
 
-- `src/App.vue` - main form UI and validation
-- `src/stores/accounts.ts` - Pinia store + localStorage persistence
-- `src/style.css` - styling
+- `src/App.vue` — UI формы и логика валидации/сохранения
+- `src/stores/accounts.ts` — Pinia store + localStorage
+- `src/style.css` — стили
 
-## Scripts
+## Запуск
 
 ```bash
 npm install
