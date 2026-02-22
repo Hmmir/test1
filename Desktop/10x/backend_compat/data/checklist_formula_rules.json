@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "description": "Formula layer for checklist parity fields.",
+  "rules": [
+    {
+      "field": "spp_share",
+      "expr": "clamp(spp if spp <= 1 else spp / 100.0, 0.0, 0.95)"
+    },
+    {
+      "field": "expected_buyouts_dyn",
+      "expr": "max(orders_dyn * clamp(buyout_percent_month, 0.0, 1.2), 0.0)"
+    },
+    {
+      "field": "avg_price_with_spp",
+      "expr": "max(avg_price * (1.0 - spp_share), 0.0) if avg_price > 0 else 0.0"
+    },
+    {
+      "field": "profit_without_adv",
+      "expr": "expected_buyouts_sum_rub - float(expected_buyouts_count) * unit_expenses - promo_sum"
+    },
+    {
+      "field": "profit_with_adv",
+      "expr": "profit_without_adv - adv_sum"
+    }
+  ]
+}

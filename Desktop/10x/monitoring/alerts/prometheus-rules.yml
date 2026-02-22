@@ -1,0 +1,42 @@
+groups:
+  - name: launch-readiness-alerts
+    rules:
+      - alert: BackendAuthFailuresSpike
+        expr: sum(increase(http_auth_failures_total[5m])) > 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Backend auth failures spike"
+
+      - alert: BackendRateLimitSpike
+        expr: sum(increase(http_rate_limited_total[5m])) > 50
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Backend rate-limit spike"
+
+      - alert: BackendOnboardingFailures
+        expr: sum(increase(http_onboarding_failures_total[10m])) > 0
+        for: 10m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Backend onboarding failures detected"
+
+      - alert: TelegramWebhookAuthFailures
+        expr: sum(increase(tg_webhook_auth_failures_total[5m])) > 0
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Telegram webhook auth failures detected"
+
+      - alert: TelegramOnboardingFailures
+        expr: sum(increase(tg_onboarding_failures_total[10m])) > 0
+        for: 10m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Telegram onboarding failures detected"

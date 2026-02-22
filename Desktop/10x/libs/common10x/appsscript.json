@@ -1,0 +1,28 @@
+{
+  "timeZone": "Etc/GMT-3",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Sheets",
+        "serviceId": "sheets",
+        "version": "v4"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "MenuParser",
+        "libraryId": "1nF1688sjjhPhTYAzOSchDZFnMix0szAvVaAVeXHe_U9qOwk2pMqOPX4Y",
+        "version": "1",
+        "developmentMode": false
+      },
+      {
+        "userSymbol": "BtlzApi",
+        "libraryId": "1XrPMRHU-pFAIfXOG_fcTzjGdv_jbp-5cLGvmLOzbEG4Wtq96-7b3PZ-s",
+        "version": "1",
+        "developmentMode": false
+      }
+    ]
+  }
+}

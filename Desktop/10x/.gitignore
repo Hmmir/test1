@@ -9,6 +9,7 @@ __pycache__/
 *.db-shm
 *.db-wal
 *.db-journal
+backend_compat/data/wb_cache/
 
 # Environment-local files
 .env
@@ -27,3 +28,10 @@ sheet_export.xlsx
 own_stack_result.json
 sheet_headers.json
 nul
+
+# Large/generated backend reports (keep only runtime config JSON)
+backend_compat/data/*.json
+!backend_compat/data/dataset_quality_gates.json
+!backend_compat/data/dataset_quality_gates.example.json
+!backend_compat/data/checklist_formula_rules.json
+!backend_compat/data/calibration_overrides.json
