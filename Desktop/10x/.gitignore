@@ -1,0 +1,29 @@
+# Python cache / tooling
+__pycache__/
+*.py[cod]
+*.pyo
+.ruff_cache/
+
+# Runtime databases
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
+# Environment-local files
+.env
+
+# Generated archives / exports
+*.zip
+*.xlsx
+*.csv
+
+# Project temporary artifacts
+tmp_*
+clone_result.json
+clone_export_latest.xlsx
+new_clone_export.xlsx
+sheet_export.xlsx
+own_stack_result.json
+sheet_headers.json
+nul
