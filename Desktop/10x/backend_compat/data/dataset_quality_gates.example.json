@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-02-20T00:00:00Z",
+  "datasets": {
+    "checklist": {
+      "mode": "upstream"
+    },
+    "wb10xMain_planMonth_v1": {
+      "exact_ratio": 0.88,
+      "min_exact_ratio": 0.9
+    },
+    "wb10xSalesFinReportTotal_v1": {
+      "mode": "upstream"
+    },
+    "wb10xAnalyticsData_v1": {
+      "mode": "local"
+    }
+  }
+}

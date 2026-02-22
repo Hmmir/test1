@@ -1,0 +1,22 @@
+{
+  "timeZone": "Europe/Minsk",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Sheets",
+        "version": "v4",
+        "serviceId": "sheets"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "common10x",
+        "libraryId": "1taVddFKAGZ-pj7xuuF47U_-c3gP2quZZwV2kvf5KFN7R1nk1PEdHKSgr",
+        "version": "1",
+        "developmentMode": false
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}

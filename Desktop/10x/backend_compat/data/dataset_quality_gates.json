@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-02-20T00:00:00Z",
+  "datasets": {
+    "checklist": {
+      "mode": "upstream"
+    },
+    "wb10xMain_planMonth_v1": {
+      "mode": "upstream"
+    },
+    "wb10xSalesFinReportTotal_v1": {
+      "mode": "upstream"
+    },
+    "wb10xSalesReport_v1": {
+      "mode": "upstream"
+    },
+    "wb10xSalesReport_v2": {
+      "mode": "upstream"
+    },
+    "wbJamClusters_v1": {
+      "mode": "upstream"
+    },
+    "wb10xAdvNormqueryStatsByDatesNmIdsAdvertIds_v1": {
+      "mode": "upstream"
+    },
+    "wbCardsData_v1": {
+      "mode": "local"
+    },
+    "wb10xAnalyticsData_v1": {
+      "mode": "local"
+    }
+  }
+}
